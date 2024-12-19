@@ -30,6 +30,7 @@
 
         /* Content Styling */
         .content {
+	
     text-align: left;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 20px;
@@ -39,6 +40,12 @@
     max-width: 400px;
     width: 90%;
     margin: 20px auto; /* Center content horizontally */
+}
+@media (min-width: 768px) {
+    .content {
+        margin-left: auto; /* Push content to the right */
+        margin-right: 20px; /* Adjust spacing from the edge */
+    }
 }
 
 
