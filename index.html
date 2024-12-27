@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-<!-- Google tag (gtag.js) -->
+	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW44E548K0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-ZW44E548K0');
 </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reel Gods</title>
     <style>
+	html, body {
+    margin: 0;
+    padding: 0;
+	 width: 100%; /* Ensure full-width usage */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
         body {
             margin: 0;
             padding: 0;
@@ -25,84 +28,183 @@
             background-size: cover;
             color: white;
             text-align: center;
+			background-position: center 10%;
         }
-        .tagline-container {
-            background: rgba(0, 0, 0, 0.35);
-            padding: 1rem 0;
-            margin-top: 225px;
-        }
-        .tagline-container h1 {
-            font-size: 2.2rem;
-            margin: 0;
-            color: #ffd700;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-        .offer-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            padding: 2rem 1rem;
-        }
-        .offer-card {
-           
+       .tagline-container {
+	   
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+   background: linear-gradient(to bottom, rgba(255, 199, 0, 0.9), rgba(255, 121, 0, 0.95));
+
+
+    padding: 1rem 0;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.9);
+    text-align: center;
+	
+	
+
+    padding: 1rem; /* Adjust padding */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+    overflow: hidden; /* Prevent content overflow */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in dimensions */
+	
+
+
+
+
+.offer-cards {
+    margin-top: 80px; /* Adjust this value to match the height of the header */
+    padding: 1rem; /* Optional, for spacing inside the container */
+}
+
+
+}
+
+.tagline-container h1 {
+    font-size: 2.5rem; /* Slightly increase the font size */
+    margin: 0;
+    color: #ffd700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+    line-height: 1.2; /* Adjust line height for better spacing */
+
+}
+			.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Reduce gap for mobile */
+    padding: 1rem;
+    margin-top: 25vh; /* Ensure proper spacing */
+    width: 100%; /* Full-width container */
+    box-sizing: border-box; /* Include padding in width */
+	
+}
+
+
+		.offer-card {
 			background-color: rgba(0, 0, 0, 0.6); /* Fallback for some browsers */
-    background: rgba(0, 0, 0, 0.6);
-            padding: 1.5rem;
-			padding-top: 1.0rem;
-            border-radius: 15px;
-            border: 2px solid rgba(255, 215, 0, 0.8);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-            max-width: 300px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .offer-card:hover {
-            transform: translateY(-5px);
+			background: rgba(0, 0, 0, 0.6);
+			padding: 1.5rem;
+			padding-top: 0.0rem;
+			border-radius: 12px;
 			
-			background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 15px 30px rgba(255, 215, 0, 0.8);
-        }
-        .offer-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-        .offer-card h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            color: #ffd700;
-            margin: 0.5rem 0;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-        }
-        .offer-card p {
-            font-size: 1rem;
-            color: #e0e0e0;
-            margin: 0.5rem 0 1rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        .offer-card a {
-            display: inline-block;
-            background: linear-gradient(145deg, #ffb800, #ff7900);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-        .offer-card a:hover {
-            background: linear-gradient(145deg, #ffd700, #ff9900);
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-            transform: scale(1.1);
-        }
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+			max-width: 350px;
+			min-width: 350px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			min-height: 250px;
+			padding-top: 20px;
+			border: 1px solid rgba(255, 199, 0, 0.8); /* Soft golden border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Maintain shadow */
+		
+			/* Ensure there's no additional spacing or layout issues */
+		}
+		.offer-card:hover{
+			transform: scale(1.025); /* Slight zoom effect */
+    box-shadow: 0px 12px 30px rgba(255, 199, 0, 0.8); /* Golden glow */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darken the background on hover */
+		}
+
+		.offer-card h3 {
+			font-size: 1.7rem;
+			margin: 0; /* Remove any default margin */
+		}
+
+		.offer-card h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.6rem;
+			color: #ffd700;
+			margin: 0.25rem 0;  /* Reduce margin around h2 */
+			padding: 0;  /* Remove any default padding */
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+		}
+
+		.offer-card p {
+			font-size: 1rem;
+			color: #e0e0e0;
+			margin: 0.5rem 0 1rem;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+		}
+
+		.offer-card img {
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 1rem;
+		}
+
+		.offer-card a {
+			display: inline-block;
+			background: linear-gradient(145deg, #00d500, #00a800); /* Vibrant green gradient */
+			color: white;
+			padding: 12.5px 22.5px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+			transition: background 0.3s ease, box-shadow 0.3s ease;
+			width: 75%;
+		}
+
+		.offer-card a:hover {
+			background: linear-gradient(145deg, #66ff66, #33cc33); /* Lighter green gradient on hover */
+			box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Green glow on hover */
+			transform: scale(1.05);
+		}
+
+
+		.offer-card img {
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 1rem;
+		}
+
+		.offer-card h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.6rem;
+			color: #ffd700;
+			margin: 0.25rem 0;  /* Reduced margin to tighten space */
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+		}
+
+		.offer-card p {
+			font-size: 1rem;
+			color: #e0e0e0;
+			margin: 0.5rem 0 1rem;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+		}
+
+		.offer-card a {
+			display: inline-block;
+			background: linear-gradient(145deg, #00d500, #00a800); /* Vibrant green gradient */
+			color: white;
+			padding: 12.5px 22.5px;
+			margin-top: 50px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+			transition: background 0.3s ease, box-shadow 0.3s ease;
+			width: 50%;
+		}
+
+		.offer-card a:hover {
+			background: linear-gradient(145deg, #66ff66, #33cc33); /* Lighter green gradient on hover */
+			box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Green glow on hover */
+			transform: scale(1.05);
+		}
+
+
         .more-bonuses {
-            margin: 2rem 0;
+            margin: 1rem 0;
         }
         .more-bonuses a {
             display: inline-block;
-            background: linear-gradient(145deg, #ffb800, #ff7900);
+            background: linear-gradient(145deg, #00d500, #00a800);
             color: white;
             padding: 10px 20px;
             border-radius: 8px;
@@ -112,24 +214,63 @@
             transition: background 0.3s ease, box-shadow 0.3s ease;
         }
         .more-bonuses a:hover {
-            background: linear-gradient(145deg, #ffd700, #ff9900);
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            background: linear-gradient(145deg, #66ff66, #33cc33);
+			
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
             transform: scale(1.1);
         }
         @media (max-width: 768px) {
-		body {
-        background-position: center top; /* Align the image to the top center */
+    .tagline-container {
+       
+        font-size: 1.8rem; /* Smaller font for headline */
+		padding: 0.5rem 0; /* Reduce header height for mobile */
     }
-            .offer-cards {
-                flex-direction: column;
-				
-            }
-			.tagline-container {
-            background: rgba(0, 0, 0, 0.35);
-            padding: 1rem 0;
-            margin-top: 25px;
-        }
-        }
+	.tagline-container h1 {
+		font-size: 1.5rem; /* Smaller font size for better fit */
+        line-height: 1.1; /* Adjust line height */
+        margin: 0.5rem 0; /* Reduce unnecessary spacing */
+	}
+
+   .offer-cards {
+        flex-direction: column; /* Stack the cards vertically */
+        padding: 0; /* Remove padding for full width */
+        margin: 0; /* Align with screen edges */
+        gap: 0; /* Remove spacing between cards */
+		
+	
+        padding: 0;
+        margin: 0;
+		margin-top: 60px; /* Match the reduced header height for mobile */
+		
+    }
+
+    .offer-card {
+
+        width: 100%; /* Full width of the screen */
+        margin: 0; /* Remove external margins */
+        padding: 1rem; /* Add padding inside the card */
+        border-radius: 0; /* Remove rounded corners */
+        border: none; /* Remove borders */
+        box-shadow: none; /* Remove shadow for a flat look */
+        background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+		border-bottom: 2px solid orange;
+    }
+
+    .offer-card h3, .offer-card h2, .offer-card p {
+        text-align: left; /* Align text to the left for readability */
+        padding: 0 1rem; /* Add padding for text */
+    }
+
+    .offer-card a {
+        display: block; /* Make buttons block-level for better usability */
+        width: 75%; /* Adjust button width */
+        margin: 1rem auto; /* Center buttons with margin */
+        padding: 12px; /* Maintain button padding */
+        font-size: 1rem; /* Adjust text size */
+		
+    }
+}
+
     </style>
 </head>
 <body>
