@@ -1,0 +1,737 @@
+html, body {
+    margin: 0;
+    padding: 0;
+	 width: 100%; /* Ensure full-width usage */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+	background-size: cover;
+	width: 100%;
+    height: 100%;
+	
+}
+        body {
+            margin: 0;
+            padding: 0;
+			text-align: justify;
+            font-family: 'Montserrat', sans-serif;
+            background: no-repeat center top;
+			 background-image: url("reel_gods.webp");
+			 background-size: cover;
+            color: white;
+            text-align: center;
+			background-position: center 10%;
+			font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;display: 
+	flex;
+    flex-direction: column;
+	justify-content: space-between;
+        }
+       .tagline-container {
+
+    position: fixed;
+    top: 0;
+   z-index: 1000;
+    width: 100%;
+   background: linear-gradient(to bottom, rgba(255, 199, 0, 0.9), rgba(255, 121, 0, 0.95));
+
+
+    padding: 1rem 0;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.9);
+    text-align: center;
+	
+	
+
+    padding: 1rem; /* Adjust padding */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+    overflow: hidden; /* Prevent content overflow */
+  
+    box-sizing: border-box; /* Include padding in dimensions */
+	
+	
+	
+	   }
+
+
+
+.offer-cards {
+    margin-top: 80px; /* Adjust this value to match the height of the header */
+    padding: 1rem; /* Optional, for spacing inside the container */
+}
+
+
+
+
+.tagline-container h1 {
+    font-size: 2.5rem; /* Slightly increase the font size */
+    margin: 0;
+    color: #ffd700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    position: relative;
+    line-height: 1.2; /* Adjust line height for better spacing */
+
+}
+			.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Reduce gap for mobile */
+    padding: 1rem;
+    margin-top: 25vh; /* Ensure proper spacing */
+    width: 100%; /* Full-width container */
+    box-sizing: border-box; /* Include padding in width */
+	
+}
+
+
+		.offer-card {
+			
+			background-color: rgba(0, 0, 0, 0.6); /* Fallback for some browsers */
+			background: rgba(0, 0, 0, 0.6);
+			padding: 1.5rem;
+			padding-top: 0.0rem;
+			border-radius: 12px;
+			
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+			max-width: 350px;
+			min-width: 350px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			min-height: 250px;
+			padding-top: 20px;
+			border: 1px solid rgba(255, 199, 0, 0.8); /* Soft golden border */
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Maintain shadow */
+		
+			/* Ensure there's no additional spacing or layout issues */
+			position: relative; /* Allows absolute positioning of child elements */
+    padding-bottom: 60px; /* Add space for the button at the bottom */
+		}
+		
+		
+	
+		.offer-card a:hover {
+    background: linear-gradient(145deg, #33cc33, #00a800);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.95);
+    
+}
+		
+		
+		.offer-card:hover{
+			transform: scale(1.025); /* Slight zoom effect */
+    box-shadow: 0px 12px 30px rgba(255, 199, 0, 0.8); /* Golden glow */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darken the background on hover */
+		}
+
+		.offer-card .offer-title {
+			font-size: 1.7rem;
+			margin: 0; /* Remove any default margin */
+		}
+
+		.offer-card .offer-subtitle {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.6rem;
+			color: #ffd700;
+			margin: 0.25rem 0;  /* Reduce margin around h2 */
+			padding: 0;  /* Remove any default padding */
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+			border-bottom: none;
+		}
+
+		.offer-card .offer-description {
+			font-size: 1rem;
+			color: #e0e0e0;
+			margin: 0.5rem 0 1rem;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+		}
+
+		.offer-card img {
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 1rem;
+		}
+		
+		
+
+		.offer-card .offer-cta {
+			display: inline-block;
+			background: linear-gradient(145deg, #00d500, #00a800); /* Vibrant green gradient */
+			color: white;
+			padding: 12.5px 22.5px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+			transition: background 0.3s ease, box-shadow 0.3s ease;
+			width: 75%;
+			position: absolute;
+    bottom: 20px; /* Distance from the bottom of the card */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure it's perfectly centered */
+	display: inline-block;
+    background: linear-gradient(145deg, #00b300, #00e600); /* Vibrant green gradient */
+    color: white;
+    padding: 15px 30px; /* Increase padding for a premium feel */
+    border-radius: 10px; /* Smooth, rounded edges */
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.3); /* Add glow effect */
+	overflow: hidden;
+		}
+		
+		.offer-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%; /* Start well off the left edge */
+    width: 150%; /* Large enough to cover the button diagonally */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Subtle white shine */
+    transform: skewX(-45deg); /* Diagonal shine */
+    transition: none;
+    animation: shine 5s infinite; /* Repeats the shine every 5 seconds */
+}
+
+@keyframes shine {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%; /* Move completely across the button */
+    }
+    100% {
+        left: 150%; /* Keep it off-screen to reset */
+    }
+}
+		
+
+		
+		
+		
+
+
+
+		.offer-card img {
+			width: 100%;
+			border-radius: 10px;
+			margin-bottom: 1rem;
+		}
+
+		.offer-card h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.6rem;
+			color: #ffd700;
+			margin: 0.25rem 0;  /* Reduced margin to tighten space */
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+		
+			
+		}
+
+		.offer-card p {
+			font-size: 1rem;
+			color: #e0e0e0;
+			margin: 0.5rem 0 1rem;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+		}
+
+		.offer-card a {
+			display: inline-block;
+			background: linear-gradient(145deg, #00d500, #00a800); /* Vibrant green gradient */
+			color: white;
+			padding: 12.5px 22.5px;
+			margin-top: 50px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+			transition: background 0.3s ease, box-shadow 0.3s ease;
+			width: 50%;
+		}
+/**
+		.offer-card a:hover {
+			background: linear-gradient(145deg, #66ff66, #33cc33); /* Lighter green gradient on hover */
+		/*	box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); /* Green glow on hover */
+		/*	transform: scale(1.05);
+		}*/
+
+
+        .more-bonuses {
+            margin: 1rem 0;
+        }
+        .more-bonuses a {
+            display: inline-block;
+            background: linear-gradient(145deg, #00d500, #00a800);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        .more-bonuses a:hover {
+            background: linear-gradient(145deg, #66ff66, #33cc33);
+			
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+    .tagline-container {
+       
+        font-size: 1.8rem; /* Smaller font for headline */
+		padding: 0.5rem 0; /* Reduce header height for mobile */
+		
+    }
+	.tagline-container h1 {
+		font-size: 1.5rem; /* Smaller font size for better fit */
+        line-height: 1.1; /* Adjust line height */
+        margin: 0.5rem 0; /* Reduce unnecessary spacing */
+	}
+
+   .offer-cards {
+        flex-direction: column; /* Stack the cards vertically */
+        padding: 0; /* Remove padding for full width */
+        margin: 0; /* Align with screen edges */
+        gap: 0; /* Remove spacing between cards */
+		
+	
+        padding: 0;
+        margin: 0;
+		margin-top: 60px; /* Match the reduced header height for mobile */
+		
+		
+    }
+
+    .offer-card {
+
+        min-width: 100%; /* Full width of the screen */
+        margin: 0; /* Remove external margins */
+        padding: 1rem; /* Add padding inside the card */
+        border-radius: 0; /* Remove rounded corners */
+        border: none; /* Remove borders */
+        box-shadow: none; /* Remove shadow for a flat look */
+        background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+		border-bottom: 2px solid orange;
+		 
+       margin: 0 auto;
+	 
+	
+    
+    } 
+	.offer-card .offer-title{
+		text-align: center;
+		padding-left: 0px;
+	}.offer-card .offer-subtitle{
+		text-align: Center;
+		padding-left: 0px;
+	}
+	.offer-card .offer-description{
+		text-align: center;
+		padding-left: 0px;
+		margin-right: 5px;
+	}
+	.offer-card .offer-cta{
+		width: 65%;
+
+		margin-left: -15px;
+		text-align: Center-align;
+	
+	
+	
+	}
+
+
+
+
+    .offer-card h3, .offer-card h2, .offer-card p {
+        text-align: left; /* Align text to the left for readability */
+        padding: 0 1rem; /* Add padding for text */
+    }
+
+    .offer-card a {
+        display: block; /* Make buttons block-level for better usability */
+        width: 75%; /* Adjust button width */
+        margin: 1rem auto; /* Center buttons with margin */
+        padding: 12px; /* Maintain button padding */
+        font-size: 1rem; /* Adjust text size */
+		
+    }
+
+}
+
+    /* Top-God-Themed-Slots */
+	
+	.reading-container {
+		
+	position: relative;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.85); /* Slightly darker background */
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8); /* Enhanced shadow */
+    border-radius: 12px; /* Smooth corners */
+    margin-top: 4rem; /* Proper spacing from header */
+    font-size: 1.1rem; /* Slightly larger text */
+    line-height: 1.6;
+	
+	
+   
+    width: 90%; /* Ensure it adapts for smaller screens */
+    min-width: 65%;
+  
+
+ 
+  
+    box-sizing: border-box; /* Include padding and border in the width */
+
+
+	
+}
+
+.reading-container h1 {
+    font-size: 2.8rem; /* Larger for emphasis */
+    color: #ffd700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+    text-align: center;
+	
+}
+
+.reading-container h1, h2{
+	font-family: 'Playfair Display', sans-serif;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	
+}
+.highlight{
+	color: #ffd700;
+}
+
+.reading-container h2 {
+    font-size: 2rem;
+    color: #ff9e00;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.reading-container p, .reading-container ul {
+    margin-bottom: 20px;
+	
+}
+.reading-container p {
+	font-size: 1.1rem; /* Slightly larger for readability */
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.reading-container ul {
+    padding-left: 20px;
+    list-style-type: disc;
+	padding-left: 25px;
+    margin-bottom: 25px;
+    list-style-image: url('lightning-icon.png'); /* Replace with thematic bullet */
+    list-style-position: inside; /* Ensures bullets are aligned with text */
+	text-align: left;
+	 list-style-type: none; /* Removes the default bullets */
+    padding-left: 0; /* Aligns text flush with the container */
+}
+
+.reading-container ul li {
+    margin-bottom: 15px;
+	font-size: 1rem;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+.reading-container .offer-card{
+	
+	background: rgba(0,0,0, 0.1);
+	position: relative;
+	margin: 0 auto;
+	
+	
+
+
+	
+}
+
+.reading-container ul li span.slot-title{
+	color: #32CD32; /* Luxury Forest Green */
+    font-weight: bold;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .reading-container {
+       width: 95%;
+        font-size: 1rem;
+		padding: 20px;
+        font-size: 1rem;
+		
+        width: 100%; /* Take up full width */
+        margin: 0; /* Remove margins */
+        border-radius: 0; /* No rounded corners */
+		position: relative;
+		top: 3rem;
+    
+    }
+
+    .reading-container h1 {
+        font-size: 2rem; /* Adjust top-level headers */
+        line-height: 1.2; /* Keep consistent spacing */
+    }
+
+     .reading-container h2 {
+        font-size: 1.5rem; /* Adjust header size for mobile */
+        line-height: 1.2; /* Improve spacing */
+    }
+	.reading-container .offer-card{
+	position: relative; /* Keep it in normal document flow */
+    left: 50%; /* Position relative to the parent */
+    transform: translateX(-50%); /* Center it horizontally */
+    min-width: 100vw;/* Extend width beyond the parent padding */
+    margin: 0; /* Remove default margins */
+
+    box-sizing: border-box; /* Include padding/border in the width */
+    padding: 0; /* Ensure no extra padding on the card */
+	border: none;
+   
+
+
+	
+
+
+
+	}
+}
+
+
+.footer-container {
+    background: linear-gradient(to bottom, rgba(255, 199, 0, 0.9), rgba(255, 121, 0, 0.95));
+    color: white;
+    padding: 2rem 1rem;
+	padding-top: 0.5rem;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 2.5rem;
+	z-index: 10px;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+	padding: 0px;
+
+flex: 1; /* Push the footer down by taking up the remaining space */
+}
+.footer-content a{
+	
+    display: inline-block; /* Ensure links behave as block elements for better touch targets */
+    z-index: 20; /* Ensure links are above any overlapping elements */
+    pointer-events: auto; /* Ensure touch and clicks are enabled */
+	padding: 10px 0;
+
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 1rem 0;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+	margin-top: 0px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #ffd700;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+/*
+
+*/
+
+
+
+/* Container to handle hover effect */
+.be-gamble-aware-link {
+       
+ display: inline-block;
+    vertical-align: top;
+	max-width: 155px;
+}
+
+/* Default yellow image */
+.be-gamble-aware {
+    display: block;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    transition: opacity 0.3s ease; /* Smooth fade transition */
+	max-width: 150px;
+}
+
+/* Change image to white on hover */
+.be-gamble-aware-link:hover .be-gamble-aware {
+    content: url('sample2.png'); /* Change to white version */
+}
+
+
+.responsible-gambling {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.begambleaware-logo {
+    max-width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper alignment */
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-bottom a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+/* Social Media Icon Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li a {
+    color: #fff; /* Icon color */
+    font-size: 20px; /* Adjust icon size */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons li a:hover {
+    color: #ffd700; /* Gold on hover */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Ensure proper alignment within footer */
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center sections */
+    }
+
+    .footer-section {
+        margin-bottom: 10px; /* Space between sections */
+        text-align: center; /* Center-align text for each section */
+		
+    }
+}
+
+.tagline-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Ensures the link spans the entire container */
+}
+
+/** privacy policy styling **/
+.privacy-container {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for distinction */
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.8;
+	position: relative;
+	top: 0.75rem;
+}
+
+.privacy-title {
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.privacy-container h2 {
+    color: #ff9e00;
+    margin-top: 20px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.privacy-container ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #e0e0e0;
+}
+
+.privacy-container p {
+    color: #e0e0e0;
+}
